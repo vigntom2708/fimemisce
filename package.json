@@ -2,7 +2,7 @@
   "name": "fimemisce",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/vigntom2708/fimemisce.git"
   },
@@ -12,5 +12,12 @@
     "yarn": "0.27.5"
   },
   "author": "Aleksandr Ignatyev <vigntom.2708@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "throng": "^4.0.0"
+  },
+  "scripts": {
+    "start": "heroku local"
+  }
 }
