@@ -18,6 +18,13 @@
     "throng": "^4.0.0"
   },
   "scripts": {
-    "start": "heroku local"
+    "start": "heroku local",
+    "test": "NODE_ENV=test ava"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "standard": "^10.0.3",
+    "supertest": "^3.0.0",
+    "tern": "^0.21.0"
   }
 }
