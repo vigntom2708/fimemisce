@@ -15,7 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "throng": "^4.0.0"
+    "formidable": "^1.1.1",
+    "throng": "^4.0.0",
+    "winston": "^2.3.1"
   },
   "scripts": {
     "start": "heroku local",
@@ -26,5 +28,16 @@
     "standard": "^10.0.3",
     "supertest": "^3.0.0",
     "tern": "^0.21.0"
+  },
+  "ava": {
+    "files": [
+      "test/*.test.js"
+    ],
+    "source": [
+      "lib/*.js"
+    ],
+    "tap": false,
+    "color": true,
+    "verbose": false
   }
 }
