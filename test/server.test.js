@@ -22,14 +22,4 @@ import server from './../lib/server'
         t.end()
       })
   })
-
-  test.cb('Requst a form to upload a file: expect json response', t => {
-    req2server(server).get('/api/request')
-      .expect(200)
-      .expect('Content-Type', 'application/json')
-      .end((_, res) => {
-        t.truthy(res.body)
-        t.end()
-      })
-  })
 }())
